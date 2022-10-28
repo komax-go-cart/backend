@@ -1,44 +1,38 @@
 # Backend
 Backend API to provide sensor data using WebSockets.
 
-# 📦 Installation
+# 🛠 Setting up the Development environment
 
-First of all you will need to activate the python virtual environment [venv](https://docs.python.org/3/library/venv.html):
+This project uses python virtual environments [venv](https://docs.python.org/3/library/venv.html) to enable lightweight independent package installations. So to start setting up this project. You will need to run one of the following commands:
 
-*Windows*
+### Windows
 
 ```bash
-.venv\Scripts\activate.bat
+.\.venv\Scripts\activate.bat
 ```
 
 ```bash
 .\.venv\bin\Activate.ps1
 ```
 
-*Linux or Mac*
+### Linux or Mac
 
 ```bash
 source .venv/bin/activate
 ```
 
-To install all necessary python libraries and packages execute the following command:
+Next, you must install the necessary dependencies and python packages via pip. For easier installation, we created requirements.txt you can install it like this:
+
+
 
 ```bash
 pip install -r requirements.txt
 ```
 
-# :hammer_and_pick: Testing
+# ♻️ Testing
 
-From the root directory run the following commands to test the api or library python projects
-
-*library*
+To execute all unit tests we implemented the [pytest](https://docs.pytest.org/en/7.2.x/) library. An automatic GitHub action is also in place. It executes on every push to the main branch or after the creation of a pull request. To run it locally on your device execute the command in the repositories root directory:
 
 ```bash
-python -m unittest discover library/
-```
-
-*api*
-
-```bash
-python -m unittest discover api/
+pytest
 ```
