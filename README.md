@@ -1,7 +1,7 @@
 # Backend
 Backend API to provide sensor data using WebSockets.
 
-# Installation
+# 📦 Installation
 
 First of all you will need to activate the python virtual environment [venv](https://docs.python.org/3/library/venv.html):
 
