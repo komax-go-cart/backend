@@ -8,7 +8,7 @@ workflow_dispatch:
 
 permissions:
 contents: read
-l
+
 jobs:
   build:
     runs-on: ubuntu-latest
