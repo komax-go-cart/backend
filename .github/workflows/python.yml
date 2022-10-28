@@ -1,15 +1,16 @@
 name: Unit Tests
 
 on:
+  push:
+    branches: [ main ]
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
 
 permissions:
-contents: read
+  contents: read
 
 jobs:
-  build:
+  testing:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
