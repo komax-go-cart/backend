@@ -26,3 +26,19 @@ To install all necessary python libraries and packages execute the following com
 ```bash
 pip install -r requirements.txt
 ```
+
+# :hammer_and_pick: Testing
+
+From the root directory run the following commands to test the api or library python projects
+
+*library*
+
+```bash
+python -m unittest discover library/
+```
+
+*api*
+
+```bash
+python -m unittest discover api/
+```
