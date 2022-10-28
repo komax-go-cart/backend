@@ -1,4 +1,4 @@
-[![Python Testing](https://github.com/komax-go-cart/backend/actions/workflows/python.yml/badge.svg)](https://github.com/komax-go-cart/backend/actions/workflows/python.yml)
+[![Automated Testing](https://github.com/komax-go-cart/backend/actions/workflows/python.yml/badge.svg)](https://github.com/komax-go-cart/backend/actions/workflows/python.yml)
 
 # Backend
 Backend API to provide sensor data using WebSockets.
