@@ -33,14 +33,6 @@ pip install -r requirements.txt
 
 From the root directory run the following commands to test the api or library python projects
 
-*library*
-
 ```bash
-python -m unittest discover library/
-```
-
-*api*
-
-```bash
-python -m unittest discover api/
+pytest
 ```
