@@ -12,7 +12,7 @@ First of all you will need to activate the python virtual environment [venv](htt
 ```
 
 ```bash
-.venv\Scripts\Activate.ps1
+.\.venv\bin\Activate.ps1
 ```
 
 *Linux or Mac*
