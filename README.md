@@ -38,3 +38,15 @@ To execute all unit tests we implemented the [pytest](https://docs.pytest.org/en
 ```bash
 pytest
 ```
+
+# Docker Container Start
+Buil Dockerfile in the root directory.
+
+```
+docker build -t gokart:1 .
+```
+
+Docker Container starten
+```
+docker run -t 80:80 gokart:1
+```
