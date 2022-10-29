@@ -40,11 +40,11 @@ def main():
 
     while True:
         counter_before = counter
-        time.sleep(1)
+        time.sleep(0.5)
         counter_after = counter
 
         ticks_per_s = counter_after - counter_before
-        cycles_per_second = ticks_per_s / 12
+        cycles_per_second = ticks_per_s / 6
         current_kmh = calculate_rpm(cycles_per_second)
         socketio.emit("currentVelocity", current_kmh)
         socketio.emit("currentRPM", cycles_per_second * 60)
