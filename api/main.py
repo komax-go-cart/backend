@@ -51,3 +51,4 @@ def main():
 threading.Thread(target=main).start()
 
 socketio.run(app=app, host="192.168.0.100", debug=True)
+
