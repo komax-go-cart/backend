@@ -11,7 +11,7 @@ GPIO.setup(38, GPIO.IN)
 current_kmh = 0
 
 app = Flask(__name__)
-socketio = SocketIO(app)
+socketio = SocketIO(app, cors_allowed_origins="*")
 
 @app.route('/')
 def index():
@@ -20,7 +20,7 @@ def index():
 def calculate_rpm(cycles_per_second):
     revperminute = cycles_per_second * 60
     meterperminute = revperminute * 90 / 100
-    return str(round((meterperminute / 16.667))) + " km/h"
+    return str(round((meterperminute / 16.667)))
 
 def main():
     global current_kmh
@@ -47,6 +47,7 @@ def main():
         cycles_per_second = ticks_per_s / 12
         current_kmh = calculate_rpm(cycles_per_second)
         socketio.emit("currentVelocity", current_kmh)
+        socketio.emit("currentRPM", cycles_per_second * 60)
 
 threading.Thread(target=main).start()
 
